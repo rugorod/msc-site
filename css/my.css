@@ -197,3 +197,9 @@ hr {
     border-bottom: 1px dashed #EFEFEF;
     padding-bottom: 10px;
 }
+
+.inf-txt {
+    text-indent: 10px;
+    text-align: justify;
+    padding-right: 5px;
+}
