@@ -2,7 +2,7 @@
 <html>
   <head>
     <meta charset="utf-8" />
-    <title></title>
+    <title>МСЧ МВД г. Челябинск</title>
     <!-- Bootstrap -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
     <!-- Slider-nivo -->
@@ -11,10 +11,25 @@
     <link href="css/my.css" rel="stylesheet">
     <!-- Font-Awesome -->
     <link rel="stylesheet" href="css/font-awesome.css">
+
+    <!-- JS -->
+    <script src="js/jquery.js"></script>
+    <!-- Sammy JS -->
+    <script src="js/sammy.js"></script>
+    <script src="js/sammy.mustache.js"></script>
+    <script src="js/mustache.js"></script>
+    <script src="js/mysammy.js"></script>
+    <!-- BS -->
+    <script src="js/bootstrap.min.js"></script>
+    <!-- Slider -->
+    <script src="js/responsiveslides.min.js"></script>
+    <script src="js/slider-config.js"></script>
+    <!-- scripts -->
   </head>
   <body>
     <header>
       <div class="container">
+	<!-- nav -->
 	<div class="navbar">
 	  <div class="navbar-inner">
 	    <div class="container">
@@ -61,6 +76,7 @@
 	    </div>
 	  </div>
 	</div>
+	<!---->
 	<div class="row">
 	  <div class="span3">
 	    <h1></h1>
@@ -71,24 +87,9 @@
 	</div>
       </div>
     </header>
-    <ul class="rslides1">
-      <li><img src="img/1.jpg" alt="" />
-	<div class="caption-container">
-	  <div class="caption-wrap">
-	    <div class="caption-title"><h1>Персонал</h1></div>
-	    <div class="caption-text"><h4>Квалифицированные специалисты в области медицины</h4></div>
-	  </div>
-	</div>
-      </li>
-      <li><img src="img/2.jpg" alt="1111" />
-	<div class="caption-container">
-	  <div class="caption-wrap">
-	    <div class="caption-title"><h1>Заголовок2</h1></div>
-	    <div class="caption-text"><h4>Текст2</h4></div>
-	  </div>
-	</div>
-      </li>
-    </ul>
+    <!-- slider -->
+    <div id="slider-main"></div>
+    <!---->
     <div class="container wrapper">
 
       <div class="row-fluid">
@@ -168,24 +169,5 @@
   </div>
 </footer>
 
-<!-- JS -->
-<script src="http://code.jquery.com/jquery-latest.js"></script>
-<script src="js/bootstrap.min.js"></script>
-<script src="js/responsiveslides.min.js"></script>
-<!-- scripts -->
-<script type="text/javascript">
-  $(function () {
-  // Slideshow 1
-  $(".rslides1").responsiveSlides({
-  auto: false,
-  pager: false,
-  nav: true,
-  speed: 500
-
-  });
-
-
-  });
-</script>
 </body>
 </html>

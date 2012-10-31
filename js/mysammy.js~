@@ -1,0 +1,45 @@
+;(function($) {
+    var app = $.sammy(function() {
+
+	//add plugin
+        this.use('Mustache');
+
+	// define a 'route'
+        this.get('#/main', function() {
+	    // load some data
+
+            this.render('main.mustache',{"name":"taras"})
+	    // swap the DOM with the new content
+		.replace('#main');
+	});
+
+
+	this.get('#/doctors', function() {
+	    // load some data
+	    this.load('names.json')
+
+            .render('doctors.mustache')
+	    // swap the DOM with the new content
+		.replace('#main');
+	});
+
+
+	this.get('#/doctors/:doctor', function() {
+	    // load some data
+	    var doctor = this.params['doctor'];
+	    alert(doctor);
+	    this.load(doctor + '.json')
+
+            .render('doctor.mustache')
+	    // swap the DOM with the new content
+		.replace('#main');
+	});
+
+
+
+    });
+
+    $(function() {
+        app.run('#/1')
+    });
+})(jQuery);
