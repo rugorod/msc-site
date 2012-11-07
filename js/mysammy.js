@@ -5,7 +5,7 @@
         this.use('Mustache');
 
 	// define a 'main-route'
-        this.get('#/', function() {
+        this.get('', function() {
 
 
 	    this.load('json/mini-boxes.json')
