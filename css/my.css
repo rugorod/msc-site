@@ -256,3 +256,13 @@ hr {
 .a-white:hover {
     color: white;
 }
+
+.img-struct {
+    width: 100%;
+}
+
+.a-struct {
+
+    color: rgb(51,51,51);
+
+}
