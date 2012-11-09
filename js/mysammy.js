@@ -11,6 +11,13 @@
 
         });
 
+        this.get('/contacts', function() {
+            this.render('mustache/contacts.mustache')
+                .replace('#main');
+
+        });
+
+
         this.get('', function() {
             this.load('json/mini-boxes.json')
                 .render('mustache/main.mustache')
