@@ -17,6 +17,18 @@
 
         });
 
+        this.get('/history', function() {
+            this.render('mustache/history.mustache')
+                .replace('#main');
+
+        });
+
+        this.get('/clear', function() {
+            this.render('mustache/clear.mustache')
+                .replace('#main');
+
+        });
+
 
         this.get('', function() {
             this.load('json/mini-boxes.json')

@@ -272,3 +272,7 @@ hr {
     background: #f9f9f9;
 
 }
+
+p {
+    text-align:justify;
+}
